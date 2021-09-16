@@ -3,7 +3,7 @@
 if [ "$1" == "" ] || [ "$2" == "" ] ; then
 	echo "Script to automate the git Add, Commit and Push got GitHub repositore."
 	echo "Use:"
-	echo "gitacp <file> <\"comment\">"
+	echo "gitacp <wilcard> <\"commit comment\">"
 	echo "Example:"
 	echo "gitacp . \"Added all new files and some new commnets to the project.\""
 else
