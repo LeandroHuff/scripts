@@ -1,6 +1,6 @@
-#!/bin/bash.sh
+#!/bin/bash
 
-if ["$1" == "" && "$2" == ""], then
+if [ "$1" == "" ] || [ "$2" == "" ] ; then
 	echo "Script to automate the git Add, Commit and Push got GitHub repositore."
 	echo "Use:"
 	echo "gitacp <file> <\"comment\">"
