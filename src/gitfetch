@@ -8,9 +8,9 @@ FAILURE="Failure"
 git add .
 if [ $? -eq 0 ]
 then
-	echo $(SUCCESSFUL)
+	echo $SUCCESSFUL
 else
-	echo $(FAILURE)
+	echo $FAILURE
 fi
 
 # COMMIT
@@ -26,27 +26,27 @@ fi
 git fetch origin
 if [ $? -eq 0 ]
 then
-	echo $(SUCCESSFUL)
+	echo $SUCCESSFUL
 else
-	echo $(FAILURE)
+	echo $FAILURE
 fi
 
 # PULL
 git pull origin
 if [ $? -eq 0 ]
 then
-	echo $(SUCCESSFUL)
+	echo $SUCCESSFUL
 else
-	echo $(FAILURE)
+	echo $FAILURE
 fi
 
 # PUSH
 git push
 if [ $? -eq 0 ]
 then
-	echo $(SUCCESSFUL)
+	echo $SUCCESSFUL
 else
-	echo $(FAILURE)
+	echo $FAILURE
 fi
 
 # END
