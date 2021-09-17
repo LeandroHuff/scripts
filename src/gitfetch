@@ -24,16 +24,6 @@ else
 	echo "Commit $FAILURE"
 fi
 
-# FETCH
-echo "Starting Fetch..."
-git fetch origin
-if [ $? -eq 0 ]
-then
-	echo "Fetch $SUCCESSFUL"
-else
-	echo "Fetch $FAILURE"
-fi
-
 # PULL
 echo "Starting Pull..."
 git pull origin
@@ -42,16 +32,6 @@ then
 	echo "Pull $SUCCESSFUL"
 else
 	echo "Pull $FAILURE"
-fi
-
-# PUSH
-echo "Starting Push..."
-git push
-if [ $? -eq 0 ]
-then
-	echo "Push $SUCCESSFUL"
-else
-	echo "Push $FAILURE"
 fi
 
 # END
