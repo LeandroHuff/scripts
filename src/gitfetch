@@ -17,9 +17,9 @@ fi
 git commit -m "$1"
 if [ $? -eq 0 ]
 then
-	echo $(SUCCESSFUL)
+	echo $SUCCESSFUL
 else
-	echo $(FAILURE)
+	echo $FAILURE
 fi
 
 # FETCH
