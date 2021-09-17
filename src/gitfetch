@@ -1,0 +1,53 @@
+#!/bin/bash
+
+# Local Variables
+SUCCESSFUL="Successful"
+FAILURE="Failure"
+
+# ADD
+git add .
+if [ $? -eq 0 ]
+then
+	echo $(SUCCESSFUL)
+else
+	echo $(FAILURE)
+fi
+
+# COMMIT
+git commit -m "$1"
+if [ $? -eq 0 ]
+then
+	echo $(SUCCESSFUL)
+else
+	echo $(FAILURE)
+fi
+
+# FETCH
+git fetch origin
+if [ $? -eq 0 ]
+then
+	echo $(SUCCESSFUL)
+else
+	echo $(FAILURE)
+fi
+
+# PULL
+git pull origin
+if [ $? -eq 0 ]
+then
+	echo $(SUCCESSFUL)
+else
+	echo $(FAILURE)
+fi
+
+# PUSH
+git push
+if [ $? -eq 0 ]
+then
+	echo $(SUCCESSFUL)
+else
+	echo $(FAILURE)
+fi
+
+# END
+
