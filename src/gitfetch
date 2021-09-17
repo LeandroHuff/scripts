@@ -5,49 +5,55 @@ SUCCESSFUL="Successful"
 FAILURE="Failure"
 
 # ADD
+echo "Starging Add..."
 git add .
 if [ $? -eq 0 ]
 then
-	echo $SUCCESSFUL
+	echo "Add $SUCCESSFUL"
 else
-	echo $FAILURE
+	echo "Add $FAILURE"
 fi
 
 # COMMIT
+echo "Starting Commit..."
 git commit -m "$1"
 if [ $? -eq 0 ]
 then
-	echo $SUCCESSFUL
+	echo "Commit $SUCCESSFUL"
 else
-	echo $FAILURE
+	echo "Commit $FAILURE"
 fi
 
 # FETCH
+echo "Starting Fetch..."
 git fetch origin
 if [ $? -eq 0 ]
 then
-	echo $SUCCESSFUL
+	echo "Fetch $SUCCESSFUL"
 else
-	echo $FAILURE
+	echo "Fetch $FAILURE"
 fi
 
 # PULL
+echo "Starting Pull..."
 git pull origin
 if [ $? -eq 0 ]
 then
-	echo $SUCCESSFUL
+	echo "Pull $SUCCESSFUL"
 else
-	echo $FAILURE
+	echo "Pull $FAILURE"
 fi
 
 # PUSH
+echo "Starting Push..."
 git push
 if [ $? -eq 0 ]
 then
-	echo $SUCCESSFUL
+	echo "Push $SUCCESSFUL"
 else
-	echo $FAILURE
+	echo "Push $FAILURE"
 fi
 
 # END
+echo "Finished!"
 
