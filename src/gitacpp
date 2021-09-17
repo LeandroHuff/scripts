@@ -1,7 +1,8 @@
 #!/bin/bash
 
+echo "Script to automate Add, Commit, Pull, Push and Status git commands sequence."
+
 if [ "$1" == "" ] || [ "$2" == "" ] ; then
-	echo "Script to automate the git Add, Commit and Push got GitHub repositore."
 	echo "Use:"
 	echo "gitacp <wilcard> <\"commit comment\">"
 	echo "Example:"
