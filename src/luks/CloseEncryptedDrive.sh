@@ -13,9 +13,9 @@ echo -e
 if [[ -z $1 ]];
 then
   echo "Close and unmount an encrypted device."
-  echo "Use: CloseEncryptedDrive.sh media"
+  echo "Use: closeluksdrive media"
   echo "where:"
-  echo "  media: is a mounted device at /media/..."
+  echo "  media: is a mounted device at /media/*"
   exit 1
 fi
 

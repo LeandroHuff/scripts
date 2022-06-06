@@ -11,10 +11,10 @@ NO_COLOR="\e[0m"
 if [[ -z $1 || -z $2 ]];
 then
   echo "Open and mount an encrypted drive by Luks."
-  echo "Use: OpenEncryptedDrive.sh drive media"
+  echo "Use: openluksdrive drive media"
   echo "where:"
-  echo "   device: is any encrypted device at /dev/..."
-  echo "    media: is any media name that will be added at /media/..."
+  echo "   device: is any encrypted device at /dev/*"
+  echo "    media: is any media name that will be added at /media/*"
   exit 1
 fi
 
